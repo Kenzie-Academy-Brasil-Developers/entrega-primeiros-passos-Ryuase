@@ -1,100 +1,62 @@
-let notaPortugues
-let notaMatematica
-let notaGeografia
-let notaHistoria
-let notaInformatica
-let notaIngles
-let notaFilosofia
-let notaSociologia
-let notaLiteratura
-let notaEducacaoFisica
+let aluno = prompt('digite o nome do aluno')
 
-let presencaPortugues
-let presencaMatematica
-let presencaGeografia 
-let presencaHistoria
-let presencaInformatica
-let presencaIngles
-let presencaFilosofia
-let presencaSociologia
-let presencaLiteratura
-let presencaEducacaoFisica
+let presenca = parseInt(prompt("Digite sua Presença"))
+
+if (aluno.length <5 || presenca <=0 || presenca >10 ) 
+{ alert ("nome ou presença invalido")
 
 
+}else { 
 
-let nome = prompt("Entre com o nome do aluno")
+let materia0 = prompt("Digite sua Matéria")
+let nota0 = parseFloat(prompt( `Digita sua Nota de ${materia0}`))
+if (nota0 <=0 || nota0 >10) alert ("Nota Invalida")
 
-let materia = prompt("Digite a materia")
+let materia1 = prompt("Digite sua Matéria")
+let nota1 = parseFloat(prompt( `Digita sua Nota de ${materia1}`))
 
+let materia2 = prompt("Digite sua Matéria")
+let nota2 = parseFloat(prompt( `Digita sua Nota de ${materia2}`))
 
+let materia3 = prompt("Digite sua Matéria")
+let nota3 = parseFloat(prompt( `Digita sua Nota de ${materia3}`))
 
-if (materia=="nota")
- 
+let materia4 = prompt("Digite sua Matéria")
+let nota4 = parseFloat(prompt( `Digita sua Nota de ${materia4}`))
 
+let materia5 = prompt("Digite sua Matéria")
+let nota5 = parseFloat(prompt( `Digita sua Nota de ${materia5}`))
 
-elseif(materia == "matematica", "Matematica","Portugues","portugues","geografia","Geografia","historia","Historia","informatica","Informatica","ingles","Ingles","filosofia","Filosofia","sociologia","Sociologia","literatura","Literatura") 
+let materia6 = prompt("Digite sua Matéria")
+let nota6 = parseFloat(prompt( `Digita sua Nota de ${materia6}`))
 
-    notaPortugues = parseFloat(prompt("Digita sua Nota"))
-    presencaPortugues = parseInt(prompt("Digite sua Presença"))
+let materia7 = prompt("Digite sua Matéria")
+let nota7 = parseFloat(prompt( `Digita sua Nota de ${materia7}`))
 
-    notaMatematica = parseFloat(prompt("Digita sua Nota"))
-    presencaMatematica = parseInt(prompt("Digite sua Presença"))
+let materia8 = prompt("Digite sua Matéria")
+let nota8 = parseFloat(prompt( `Digita sua Nota de ${materia8}`))
 
-    notaGeografia  = parseFloat(prompt("Digita sua Nota"))
-    presencaGeografia  = parseInt(prompt("Digite sua Presença"))
+let materia9 = prompt("Digite sua Matéria")
+let nota9 = parseFloat(prompt( `Digita sua Nota de ${materia9}`))
 
-    notaMaHistoria = parseFloat(prompt("Digita sua Nota"))
-    presencaHistoria = parseInt(prompt("Digite sua Presença"))
+let mediaFinal = ( nota0 + nota1 + nota2 + nota3 + nota4 + nota5 + nota6 + nota7 + nota8 + nota9 ) / 10
 
-    notaInformatica = parseFloat(prompt("Digita sua Nota"))
-    presencaInformatica = parseInt(prompt("Digite sua Presença"))
+if (mediaFinal >= 8 && presenca >= 6) {
 
-    notaIngles = parseFloat(prompt("Digita sua Nota"))
-    presencaIngles = parseInt(prompt("Digite sua Presença"))
+    alert
+        (`O Aluno Foi Aprovado com uma média de  ${mediaFinal} e uma presença de ${presenca}`)
 
-    notaFilosofia = parseFloat(prompt("Digita sua Nota"))
-    presencaFilosofia = parseInt(prompt("Digite sua Presença"))
+} else {
+    
+    alert
+     (`O Aluno Foi Reprovado com uma média de ${mediaFinal} e uma presença de ${presenca}`)
 
-    notaSociologia = parseFloat(prompt("Digita sua Nota"))
-    presencaSociologia = parseInt(prompt("Digite sua Presença"))
-
-    notaLiteratura = parseFloat(prompt("Digita sua Nota"))
-    presencaLiteratura = parseInt(prompt("Digite sua Presença"))
-
-    notaEducacaoFisica = parseFloat(prompt("Digita sua Nota"))
-    presencaEducacaoFisica = parseInt(prompt("Digite sua Presença"))
+    }}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-console.log(nome)
-console.log(notaMatematica, presencaMatematica);
-console.log(notaPortugues, presencaPortugues);
-console.log(notaGeografia, presencaGeografia);
-console.log(notaFilosofia,presencaFilosofia);
-console.log(notaIngles, presencaIngles);
-console.log(notaLiteratura, presencaLiteratura);
-console.log(notaInformatica, presencaInformatica)
-console.log(notaHistoria, presencaHistoria)
-console.log(notaEducacaoFisica, presencaEducacaoFisica)
-console.log(notaSociologia,presencaSociologia)
-
-
-
-
-
-
+    
 
 
 
